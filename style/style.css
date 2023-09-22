@@ -1,15 +1,23 @@
 body{
-    flex-direction: column;
     font-family: 'Roboto', sans-serif;
     height: 100vh;
 }
 
-body, .header, ul{
+body, .hero-text, .doggos{
+    flex-direction: column;
+}
+
+body, .header, ul, .hero-container, .hero-text, .doggos, .item-deck{
     display: flex;
+}
+
+ul{
+ gap: 10px;
 }
 
 .header{
     justify-content: space-between;
+    padding: 24px;
 }
 .top,.footer{
     background: #1f2937;
@@ -24,6 +32,7 @@ body, .header, ul{
     color: #e5e7eb;
     font-size: 18x;
 }
+
 #hero-head{
     font-weight: 800;
     font-size: 48px;
@@ -37,4 +46,112 @@ body, .header, ul{
 
 .chunk{
     flex: 1
+}
+
+#pug{
+    height: 500px;
+    width: 500px;
+}
+
+.hero-text,.hero-container{
+justify-content: center;
+}
+
+.hero-container{
+    padding: 40px;
+    gap: 100px
+}
+
+.top-button{
+ background-color: #3882f6;
+ display: inline-block;
+ width: fit-content;
+ padding: 10px 30px;
+ color: white;
+ text-decoration: none;
+ margin-top: 10px;
+ border-radius: 15px;
+ text-align: center;
+}
+
+
+.item-logo{
+    height: 100px;
+    width: 100px;
+    border: solid 3px #3882f6;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.doggos{
+    align-items: center;
+    text-align: center;
+}
+
+.item-deck{
+    gap: 20px;
+    padding: 100px;
+}
+
+h2{
+    padding-top: 20px;
+}
+
+.item-package{
+    max-width: 100px;
+}
+
+.quote{
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+blockquote{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+blockquote p{
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937
+}
+
+footer{
+    align-self: flex-end;
+}
+
+.action-container{
+    padding: 80px 160px;
+    display: flex;
+    justify-content: center;
+}
+
+.action{
+    background: #3882f6;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    color: white;
+    border-radius: 10px;
+}
+
+h3{
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.action-button{
+    align-self: center;
+    border: 3px solid white;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.action a{
+    text-decoration: none;
+    color: white;
 }
